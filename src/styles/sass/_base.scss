@@ -1,0 +1,19 @@
+@use 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: variables.$family-outfit;
+}
+
+body {
+    min-height: 100vh;
+    background: variables.$color-very-dark-blue-body;
+}
+
+.--flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

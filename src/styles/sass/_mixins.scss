@@ -1,0 +1,29 @@
+@mixin width-height($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin width-minheight($w, $h) {
+    min-width: $w;
+    min-height: $h;
+}
+
+@mixin font-size-weight-color($s, $w, $c) {
+    font-size: $s;
+    font-weight: $w;
+    color: $c;
+}
+
+@mixin top-left-opacity-position-index($t, $l, $o, $p, $i) {
+    top: $t;
+    left: $l;
+    opacity: $o;
+    position: $p;
+    z-index: $i;
+}
+
+@mixin flex-align-gap($ai, $gp) {
+    display: flex;
+    align-items: $ai;
+    gap: $gp;
+}

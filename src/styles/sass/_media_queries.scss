@@ -1,0 +1,59 @@
+@use 'variables';
+@use 'mixins';
+
+@media (min-width: 64rem) {
+    .equilibrium {
+        @include mixins.width-height(21.875rem, 37.25rem);
+
+        &__figure { @include mixins.width-height(18.875rem, 18.875rem); }
+
+        &__title {
+            width: 18.875rem;
+            margin-bottom: 1rem;
+        }
+
+        &__description {
+            width: 18.875rem;
+            margin-bottom: 1.5rem;
+            color: variables.$color-soft-blue;
+        }
+
+        & .info {
+            @include mixins.width-height(18.8125rem, 1.25rem);
+            margin-bottom: 1.5rem;
+            gap: 6.875rem;
+        
+            &__price {
+                @include mixins.width-height(5.8425rem, 1.25rem);
+
+                &-value {
+                    @include mixins.width-minheight(4.6875rem, 1.25rem);
+                }
+            }
+    
+            &__days {
+                @include mixins.width-height(6.04375rem, 1.25rem);
+        
+                &-value {
+                    @include mixins.width-minheight(4.5625rem, 1.25rem);
+                    color: variables.$color-soft-blue;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        & .divider { width: 18.875rem; }
+
+        & .user {
+            width: 14.375rem;
+        
+            &__name {
+                @include mixins.width-height(11.313rem, 1.25rem);
+                font-size: 1rem;
+                color: variables.$color-soft-blue;
+            
+                &-highlight { color: variables.$color-white; }
+            }
+        }
+    }
+}
