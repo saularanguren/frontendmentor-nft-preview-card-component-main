@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-Thanks for checking out this front-end coding challenge. [NFT preview card live]() 🚀
+Thanks for checking out this front-end coding challenge. [NFT preview card live](https://frontendmentor-nft-preview-card-main.netlify.app/) 🚀
 
 **This challenge was developed with HTML, SASS, JavaScript and Vite.**
 
