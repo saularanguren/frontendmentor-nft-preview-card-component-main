@@ -1,0 +1,20 @@
+---
+import Card from '../components/Card.astro'
+import Layout from '../layouts/Layout.astro'
+import imgEquilibrium from '../assets/images/image-equilibrium.jpg';
+import imgAvatar from '../assets/images/image-avatar.png';
+---
+
+<Layout title="Frontend Mentor | NFT preview card component">
+
+	<Card 
+		title="Equilibrium #3429"
+		info="Our Equilibrium collection promotes balance and calm."
+		price="0.041 ETH"
+		time="3 days left"
+		nameAvatar="Jules Wyvern"
+		imgNft={imgEquilibrium.src}
+		imgAvatar={imgAvatar.src}
+	/>
+
+</Layout>

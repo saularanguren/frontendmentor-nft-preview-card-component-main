@@ -1,0 +1,35 @@
+---
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" translate="no">
+	<head>
+		<!-- ============================= metas ============================= -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- ============================= links ============================= -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+		<!-- ============================= title ============================= -->
+		<title>{title}</title>
+	</head>
+	<body class="flex items-center justify-center gap-[0.6250rem] py-[3.8750rem] lg:py-[9.5000rem] px-6 lg:px-[34.0625rem] bg-Very-Dark-Blue-(main-BG)">
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	@tailwind base;
+
+	@layer base {
+		* {
+			@apply m-0 p-0 box-border font-outfit;
+		}
+	}
+
+	@tailwind components;
+	@tailwind utilities;
+</style>
